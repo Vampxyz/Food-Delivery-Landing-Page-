@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+    text-decoration: none;
+}
+
+:root {
+    --fast-color-h1: #FF7E00;
+    --background-color: linear-gradient(to top, #F4ECE1, #FCFBF7);
+    --gray: #2f2f2f;
+}
+
+body {
+    background: var(--background-color);
+    height: 100vh;
+    padding-left: 96px;
+}
+
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 48px 96px 48px 0px;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    
+    color: #000;
+}
+
+header nav {
+    display: flex;
+    gap: 80px;
+}
+header nav a {
+    color: #000;
+
+    position: relative;
+}
+header nav a::before {
+    content: "";
+    display: block;
+
+    width: 0;
+    height: 2px;
+
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+
+    background-color: #000;
+
+    transition: width 0.2s ease;
+}
+nav a:hover::before {
+    width: 100%;
+}
+
+header #search-inp input {
+    padding-block: 12px;
+    padding-inline: 50px;
+
+    width: 210px;
+
+    border-radius: 30px;
+    border: 0px solid black;
+}
+header #search-inp #search {
+    position: relative;
+    top: 5px;
+    left: 40px;
+}
+header #search-inp #cart {
+    position: relative;
+    top: 5px;
+    right: 40px;
+    
+    border-left: 1px solid black;
+    padding-left: 12px;
+}

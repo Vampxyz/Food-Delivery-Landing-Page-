@@ -1,255 +1,254 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins";
-    text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+  text-decoration: none;
 }
 
 :root {
-    --fast-color-h1: #FF7E00;
-    --background-color: linear-gradient(to top, #f4ece1, #fcfbf7);
-    --gray: #2f2f2f;
+  --fast-color-h1: #ff7e00;
+  --background-color: linear-gradient(to top, #f4ece1, #fcfbf7);
+  --gray: #2f2f2f;
 }
 
 body {
-    background: #eee;
-    padding-left: 96px;
+  background: #eee;
+  padding-left: 96px;
 }
 
 /* Header */
 header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 48px 96px 48px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 48px 96px 48px 0px;
 }
 
 header .logo {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    
-    color: #000;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  color: #000;
 }
 
 header nav {
-    display: flex;
-    gap: 80px;
+  display: flex;
+  gap: 80px;
 }
 
 /* Links animation */
 header nav a {
-    color: #000;
+  color: #000;
 
-    position: relative;
+  position: relative;
 }
 header nav a::before {
-    content: "";
-    display: block;
+  content: "";
+  display: block;
 
-    width: 0;
-    height: 2px;
+  width: 0;
+  height: 2px;
 
-    position: absolute;
-    left: 50%;
-    bottom: 0px;
-    transform: translateX(-50%);
+  position: absolute;
+  left: 50%;
+  bottom: 0px;
+  transform: translateX(-50%);
 
-    background-color: var(--fast-color-h1);
+  background-color: var(--fast-color-h1);
 
-    transition: width 0.3s ease;
+  transition: width 0.3s ease;
 }
 nav a:hover::before {
-    width: 100%;
+  width: 100%;
 }
 
 /* Input section */
 header #search-inp input {
-    padding-block: 12px;
-    padding-inline: 50px;
+  padding-block: 12px;
+  padding-inline: 50px;
 
-    width: 210px;
+  width: 210px;
 
-    border-radius: 30px;
-    border: 0px solid black;
+  border-radius: 30px;
+  border: 0px solid black;
 
-    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.15);
 }
 header #search-inp #search {
-    position: relative;
-    top: 5px;
-    left: 40px;
+  position: relative;
+  top: 5px;
+  left: 40px;
 }
 header #search-inp #shopping-icon-box {
-    position: absolute;
-    top: 61px;
-    right: 115px;
+  position: absolute;
+  top: 61px;
+  right: 115px;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    border-left: 1px solid #948c8c;
-    padding-left: 10px;
-    cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-left: 1px solid #948c8c;
+  padding-left: 10px;
+  cursor: pointer;
 }
 input[type="search"]::-webkit-search-cancel-button {
-    display: none;
+  display: none;
 }
-
 
 /* Main */
 main {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 
-    margin-bottom: 80px;
-    margin-top: 80px;
+  margin-bottom: 80px;
+  margin-top: 80px;
 
-    width: 950px;
+  width: 950px;
 }
 main #content {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
 
-    margin-bottom: -40px;
+  margin-bottom: -40px;
 }
-main h1 {        
-    color: var(--fast-color-h1);
-    font-size: 128px;
-    font-weight: 800;
+main h1 {
+  color: var(--fast-color-h1);
+  font-size: 128px;
+  font-weight: 800;
 }
 main .food-delivery {
-    color: #000;
-    font-size: 48px;
+  color: #000;
+  font-size: 48px;
 
-    font-weight: 800;
-    line-height: 48px;
+  font-weight: 800;
+  line-height: 48px;
 }
 main .food-delivery span::after {
-    content: url(assets/arrow-movement.svg);
+  content: url(assets/arrow-movement.svg);
 
-    position: absolute;
-    top: 140px;
-    left: 510px;
+  position: absolute;
+  top: 140px;
+  left: 510px;
 }
 
 main #description {
-    color: #909090;
-    font-size: 24px;
+  color: #909090;
+  font-size: 24px;
 
-    width: 850px;
+  width: 850px;
 
-    font-weight: 400;
-    line-height: 30px;
+  font-weight: 400;
+  line-height: 30px;
 }
 
 /* Button section */
 
-main #buttons{
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    gap: 16px;
+main #buttons {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 16px;
 }
 
 main #buttons button {
-    color: #fff;
-    font-size: 24px;
+  color: #fff;
+  font-size: 24px;
 
-    font-weight: 400;
+  font-weight: 400;
 
-    padding: 20px 40px;
-    border-radius: 60px; 
+  padding: 20px 40px;
+  border-radius: 60px;
 
-    border: none;
-    cursor: pointer;
-    
-    background-color: var(--gray);
+  border: none;
+  cursor: pointer;
+
+  background-color: var(--gray);
 }
 main #buttons img {
-    margin: 0;
+  margin: 0;
 }
 
 main #buttons #video {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 main #buttons #video img {
-    position: relative;
-    top: 15px;
-    left: 5px;
+  position: relative;
+  top: 15px;
+  left: 5px;
 }
 
 main #buttons #video a {
-    color: #000;
-    font-size: 24px;
-    font-weight: 700;
+  color: #000;
+  font-size: 24px;
+  font-weight: 700;
 
-    position: relative;
+  position: relative;
 }
 #video a::before {
-    content: "";
-    display: block;
+  content: "";
+  display: block;
 
-    width: 0;
-    height: 2px;
+  width: 0;
+  height: 2px;
 
-    position: absolute;
-    bottom: 2px;
+  position: absolute;
+  bottom: 2px;
 
-    background-color: var(--fast-color-h1);
+  background-color: var(--fast-color-h1);
 
-    transition: width 0.4s ease;
+  transition: width 0.4s ease;
 }
 
 #video a:hover::before {
-    width: 100%;
+  width: 100%;
 }
 
 /* Rate section */
 #rate-section {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 
-    width: 250px;
+  width: 250px;
 
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 #rate-section #stars {
-    display: flex;
-    flex-direction: row;
-    gap: 4px;
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
 }
 #rate-section #stars img {
-    width: 35px;
-    height: 35px;
+  width: 35px;
+  height: 35px;
 }
 #rate-section #rating-number {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 
-    line-height: 25px;
+  line-height: 25px;
 
-    font-size: 20px;
+  font-size: 20px;
 
-    position: relative;
-    left: 5px;
+  position: relative;
+  left: 5px;
 }
 #rating-number p {
-    color: #000;
-    font-weight: 700;
+  color: #000;
+  font-weight: 700;
 }
 #rating-number span {
-    color: #909090;
+  color: #909090;
 }
 
 /* #food {
@@ -259,7 +258,7 @@ main #buttons #video a {
 
 } */
 #food {
-    position: absolute;
-    top: 150px;
-    right: 60px;
+  position: absolute;
+  top: 150px;
+  right: 60px;
 }
